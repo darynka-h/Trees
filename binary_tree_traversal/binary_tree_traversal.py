@@ -25,15 +25,13 @@ def in_order(node):
         return [node.data]
     left_in = in_order(node.left)
     right_in = in_order(node.right)
-    if node.left is None:
-        return [node.data]
     return left_in + [node.data] + right_in
 
 
 def post_order(node):
     if not node:
         return []
-    if node.left is None:
+    if not node.left and not node.right:
         return [node.data]
     left_in = post_order(node.left)
     right_in = post_order(node.right)
