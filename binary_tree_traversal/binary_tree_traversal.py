@@ -61,12 +61,12 @@ def post_order(node):
 # n_1.right = n_3
 
 # ========ланцюжок
-c_ = Node(3)
-b_ = Node(2)
-b_.left = c_
-a_ = Node(1)
-a_.left = b_
+# c_ = Node(3)
+# b_ = Node(2)
+# b_.left = c_
+# a_ = Node(1)
+# a_.left = b_
 # print(in_order(n_1))
 # print(pre_order(n_1))
 # print(post_order(n_1))
-print(pre_order(a_))
+# print(pre_order(a_))
